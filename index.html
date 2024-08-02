@@ -6,7 +6,10 @@
     <title>homework 2 HTML</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.com/libraries/modern-normalize"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,66 +20,80 @@
     />
   </head>
   <body>
-    <div class="page-container">
-      <header>
-        <nav>
-          <a href="./index.html" class="text-logo"
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo"
             >Web<span class="second-prt-logo-header">Studio</span></a
           >
-          <ul>
-            <li><a href="./index.html" class="navigation">Studio</a></li>
-            <li><a href="" class="navigation">Portfolio</a></li>
-            <li><a href="" class="navigation">Contacts</a></li>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a href="./index.html" class="header-menu-link">Studio</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="" class="header-menu-link">Portfolio</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="" class="header-menu-link">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <address class="contacts">
-          <ul>
-            <li>
-              <a href="mailto:info@devstudio.com" class="our-contacts"
+        <address class="header-contacts">
+          <ul class="header-contacts-list">
+            <li class="cheader-contacts-item">
+              <a href="mailto:info@devstudio.com" class="header-contacts-link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+110001111111" class="our-contacts"
+            <li class="cheader-contacts-item">
+              <a href="tel:+110001111111" class="header-contacts-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-      </header>
-      <main>
-        <section class="start-page">
-          <h1 class="start-name">
-            Effective Solutions<br />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-name">
+            Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
-        </section>
-        <section class="features">
+          <div class="hero-btn">
+            <button type="button" class="button">Order Service</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features">
           <h2 class="features-name">Feature</h2>
-          <ul>
-            <li>
+          <ul class="features-list">
+            <li class="features-items">
               <h3 class="headlines">Strategy</h3>
               <p class="descriptions">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-items">
               <h3 class="headlines">Punctuality</h3>
               <p class="descriptions">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-items">
               <h3 class="headlines">Diligence</h3>
               <p class="descriptions">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-items">
               <h3 class="headlines">Technologies</h3>
               <p class="descriptions">
                 Design practice focused on digital experiences. We bring forth a
@@ -84,11 +101,14 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="our-team">
+        </div>
+      </section>
+
+      <section class="our-team">
+        <div class="container">
           <h2 class="features-name">Our Team</h2>
-          <ul>
-            <li class="employee">
+          <ul class="our-team-list">
+            <li class="our-team-item">
               <img
                 src="./images/first_man.jpg"
                 alt="A man, Product Designer Mark Guerrero"
@@ -97,7 +117,7 @@
               <h3 class="headlines">Mark Guerrero</h3>
               <p class="descriptions">Product Designer</p>
             </li>
-            <li class="employee">
+            <li class="our-team-item">
               <img
                 src="./images/second_man.jpg"
                 alt="A man, Frontend Developer Tom Ford"
@@ -106,7 +126,7 @@
               <h3 class="headlines">Tom Ford</h3>
               <p class="descriptions">Frontend Developer</p>
             </li>
-            <li class="employee">
+            <li class="our-team-item">
               <img
                 src="./images/first-girl.jpg"
                 alt="A woman, marketing Camila Garcia"
@@ -115,7 +135,7 @@
               <h3 class="headlines">Camila Garcia</h3>
               <p class="descriptions">Marketing</p>
             </li>
-            <li class="employee">
+            <li class="our-team-item">
               <img
                 src="./images/thirt_man.jpg"
                 alt="A man, UI Designer Daniel Wilson"
@@ -125,11 +145,14 @@
               <p class="descriptions">UI Designer</p>
             </li>
           </ul>
-        </section>
-        <section class="our-porfolio">
+        </div>
+      </section>
+
+      <section class="our-portfolio">
+        <div class="container porfolio">
           <h2 class="features-name">Our Porfolio</h2>
-          <ul>
-            <li>
+          <ul class="our-portfolio-list">
+            <li class="our-portfolio-item">
               <img
                 src="./images/banking-app.jpg"
                 alt="banking application"
@@ -138,7 +161,7 @@
               <h3 class="headlines">Banking App</h3>
               <p class="descriptions">App</p>
             </li>
-            <li>
+            <li class="our-portfolio-item">
               <img
                 src="./images/cashless-payment.jpg"
                 alt="cashless payment"
@@ -147,7 +170,7 @@
               <h3 class="headlines">Cashless Payment</h3>
               <p class="descriptions">Marketing</p>
             </li>
-            <li>
+            <li class="our-portfolio-item">
               <img
                 src="./images/meditation-app.jpg"
                 alt="laptop and smartphone"
@@ -156,7 +179,7 @@
               <h3 class="headlines">Meditation App</h3>
               <p class="descriptions">App</p>
             </li>
-            <li>
+            <li class="our-portfolio-item">
               <img
                 src="./images/taxi-service.jpg"
                 alt="Сar dashboard, hands on the steering wheel, and smartphone navigation enabled"
@@ -165,7 +188,7 @@
               <h3 class="headlines">Taxi Service</h3>
               <p class="descriptions">Marketing</p>
             </li>
-            <li>
+            <li class="our-portfolio-item">
               <img
                 src="./images/screen-illustrations.jpg"
                 alt="screen illustrations in smartphone"
@@ -174,7 +197,7 @@
               <h3 class="headlines">Screen Illustrations</h3>
               <p class="descriptions">Design</p>
             </li>
-            <li>
+            <li class="our-portfolio-item">
               <img
                 src="./images/online-courses.jpg"
                 alt="A girl wearing headphones laughs and looks at her smartphone"
@@ -184,10 +207,13 @@
               <p class="descriptions">Marketing</p>
             </li>
           </ul>
-        </section>
-      </main>
-      <footer class="footer">
-        <a href="./index.html" class="text-logo"
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="logo"
           >Web<span class="second-prt-logo-footer">Studio</span></a
         >
         <p class="footer-description">
@@ -195,7 +221,7 @@
           sales for your business with digital<br />
           marketing & growth solutions.
         </p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
