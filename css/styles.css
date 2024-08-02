@@ -166,6 +166,7 @@ main {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .button:hover,
@@ -176,7 +177,7 @@ main {
 .features {
   padding: 120px 0;
 }
-.features .features-name {
+.features .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -224,7 +225,7 @@ main {
 /** =========OUR TEAM ========== */
 .our-team {
   background-color: #f4f4fd;
-  padding-bottom: 120px 0;
+  padding: 120px 0;
 }
 .our-team .features-name {
   margin-bottom: 72px;
@@ -245,7 +246,6 @@ main {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .our-team-list {
   display: flex;
@@ -255,6 +255,7 @@ main {
   padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .teammate {
   padding: 32px 0;
@@ -317,10 +318,9 @@ main {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
-.our-portfolio h3 {
+.portfolio-name .headlines {
   font-family: inherit;
   font-weight: 500;
   font-size: 20px;
@@ -328,8 +328,9 @@ main {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-top: 32px;
+  margin-bottom: 8px;
 }
-.our-portfolio p {
+.portfolio-name .descriptions {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
