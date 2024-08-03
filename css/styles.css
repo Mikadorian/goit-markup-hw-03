@@ -135,6 +135,9 @@ main {
   background-color: #2e2f42;
   padding: 188px 0;
   height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-name {
   font-family: inherit;
@@ -150,6 +153,7 @@ main {
   margin: 0 auto;
   max-width: 496px;
   padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .button {
@@ -165,7 +169,7 @@ main {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 0 auto 188px;
   min-width: 169px;
 }
 
