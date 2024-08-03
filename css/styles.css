@@ -238,7 +238,7 @@ main {
   margin-bottom: 72px;
 }
 
-.our-team-item {
+.our-team .our-team-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +251,7 @@ main {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .our-team-list {
   display: flex;
